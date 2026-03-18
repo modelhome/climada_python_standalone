@@ -24,7 +24,7 @@ name = "hurricane_losses"
 
 [outputs.schema]
 type = "object"
-required = ["aai_agg_usd", "event_loss_table", "loss_exceedance_curve"]
+required = ["aai_agg_usd", "event_loss_table", "loss_exceedance_curve", "total_exposed_value_usd"]
 properties.scenario.type = "string"
 properties.storm_category.type = "integer"
 properties.aai_agg_usd.type = "number"
