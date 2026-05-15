@@ -4,6 +4,13 @@ image = "model-home/climada_python:latest"
 run = "docker run --rm -v \"$PWD/run:/run\" ${IMAGE} ${ARGS} > run/hurricane_losses.output.json"
 args = ["{input:hurricane_scenario}"]
 
+[runner]
+entrypoint = "https://raw.githubusercontent.com/modelhome/climada_python_standalone/4b99fc56687376d28343f7a5e6d01b7f910e5ddc/runner.py"
+language = "python"
+
+[build]
+dockerfile = "https://raw.githubusercontent.com/modelhome/climada_python_standalone/4b99fc56687376d28343f7a5e6d01b7f910e5ddc/Dockerfile"
+
 [resources]
 memory = "4Gi"
 cpu = "2"
