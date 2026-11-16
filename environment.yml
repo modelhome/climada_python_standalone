@@ -1,7 +1,6 @@
 name: base
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.12
   # Geospatial stack (C-level deps handled by conda)
@@ -26,7 +25,7 @@ dependencies:
   # Data formats
   - netcdf4
   - h5py
-  - tables
+  - pytables
   - cfgrib
   - eccodes
   - openpyxl
